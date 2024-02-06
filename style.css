@@ -1,11 +1,54 @@
 .main_Sec1{
     display: flex;
     gap: 20px;
-background-color: blue;
+    background-color: red;
+    margin-top: 40px;
+    width: 80%;
+  
 }
 
 .sec1_1{
+    background-image: url("images/images (2).jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 300px;
     width: 50%;
-    background-color: red;
+  
+}
+.sec1_1_text{
+    padding-top: 30px;
+    padding-left:40px;   
+    width: 50%;
+}
+
+.sec1_1_text > button {
+    background-color: blue;
+    height: 40px;
+    width: 100px;
+    color: white;
+    border-radius: 5px;
+    
+}
+
+.sec1_2{
+    background-image: url("images/unnamed (1).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 50%;
+    
+}
+
+.sec1_2_text{
+    padding-top: 30px;
+    padding-left:40px;   
+    width: 50%;
+}
+.sec1_2_text > button {
+    background-color: blue;
+    height: 40px;
+    width: 100px;
+    color: white;
+    border-radius: 5px;
+    
 }
