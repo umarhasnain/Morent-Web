@@ -1,54 +1,93 @@
-.main_Sec1{
-    display: flex;
-    gap: 20px;
-    background-color: red;
-    margin-top: 40px;
-    width: 80%;
-  
+*{
+    margin: 0%;
+    padding: 0%;
 }
 
-.sec1_1{
+.main_sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    gap: 30px;
+}
+
+.mainSec_card1{
     background-image: url("images/images (2).jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 300px;
-    width: 50%;
-  
 }
-.sec1_1_text{
-    padding-top: 30px;
-    padding-left:40px;   
-    width: 50%;
+.mainSec_card2{
+    background-image: url("./images/depositphotos_10951622-stock-photo-blue-background.jpg");
 }
 
-.sec1_1_text > button {
-    background-color: blue;
-    height: 40px;
-    width: 100px;
+.main_sec_text{
+    width:53%;
+}
+.main_sec_img{
+    padding-left: 100px;
+}
+
+@media only screen and (min-width:250px)and (max-width:730px) {
+
+    .main_sec{
+        flex-wrap: wrap;
+        padding-left: 20px;
+    }
+    .main_sec_img{
+        padding-left: 50px;
+    }
+}
+
+.sec1{
+    display: flex;
+    text-decoration: none;
+    height: 100px;
+}
+
+.sec1_btn{
+    background-color: whitesmoke;
+}
+.pickupBtn{
+    margin-left: 110px;
+}
+
+.mainSec1{
+    display: flex;
+    margin: 20px;
+    gap: 10px;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.btn_arrow{
+    height: 70px;
+    margin-top: 20px;
+    background-color: #2756e2;
     color: white;
     border-radius: 5px;
-    
 }
 
-.sec1_2{
-    background-image: url("images/unnamed (1).jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-    width: 50%;
-    
+@media only screen and (max-width:1120px)and (min-width:250px){
+    .mainSec1{
+        flex-wrap: wrap;
+        padding-left: 0px;
+        margin-left: 20px;
+        margin-right: 10px;
+        
+    }
+    .sec1{
+        background-color: green;
+        margin-left: 0px;
+        padding-left: 20px;
+        padding-right: 0px;
+       }
+       .dropdown{
+        size: 10px;
+        font-size: 10px;
+       }
 }
 
-.sec1_2_text{
-    padding-top: 30px;
-    padding-left:40px;   
-    width: 50%;
-}
-.sec1_2_text > button {
-    background-color: blue;
-    height: 40px;
-    width: 100px;
-    color: white;
-    border-radius: 5px;
-    
-}
+
