@@ -1,0 +1,11 @@
+.main_Sec1{
+    display: flex;
+    gap: 20px;
+background-color: blue;
+}
+
+.sec1_1{
+    height: 300px;
+    width: 50%;
+    background-color: red;
+}
