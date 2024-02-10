@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
 }
 
-.main_sec{
+.main_sec {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,47 +13,51 @@
     gap: 30px;
 }
 
-.mainSec_card1{
+.mainSec_card1 {
     background-image: url("images/images (2).jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }
-.mainSec_card2{
+
+.mainSec_card2 {
     background-image: url("./images/depositphotos_10951622-stock-photo-blue-background.jpg");
 }
 
-.main_sec_text{
-    width:53%;
+.main_sec_text {
+    width: 53%;
 }
-.main_sec_img{
+
+.main_sec_img {
     padding-left: 100px;
 }
 
 @media only screen and (min-width:250px)and (max-width:730px) {
 
-    .main_sec{
+    .main_sec {
         flex-wrap: wrap;
         padding-left: 20px;
     }
-    .main_sec_img{
+
+    .main_sec_img {
         padding-left: 50px;
     }
 }
 
-.sec1{
+.sec1 {
     display: flex;
     text-decoration: none;
     height: 100px;
 }
 
-.sec1_btn{
+.sec1_btn {
     background-color: whitesmoke;
 }
-.pickupBtn{
+
+.pickupBtn {
     margin-left: 110px;
 }
 
-.mainSec1{
+.mainSec1 {
     display: flex;
     margin: 20px;
     gap: 10px;
@@ -62,7 +66,7 @@
     padding-right: 80px;
 }
 
-.btn_arrow{
+.btn_arrow {
     height: 70px;
     margin-top: 20px;
     background-color: #2756e2;
@@ -70,24 +74,119 @@
     border-radius: 5px;
 }
 
-@media only screen and (max-width:1120px)and (min-width:250px){
-    .mainSec1{
+@media only screen and (max-width:1120px)and (min-width:250px) {
+    .mainSec1 {
         flex-wrap: wrap;
         padding-left: 0px;
         margin-left: 20px;
         margin-right: 10px;
-        
+
     }
-    .sec1{
+
+    .sec1 {
         background-color: green;
         margin-left: 0px;
         padding-left: 20px;
         padding-right: 0px;
-       }
-       .dropdown{
+    }
+
+    .dropdown {
         size: 10px;
         font-size: 10px;
-       }
+    }
 }
 
+.sec_car_container1 {
+    display: grid;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 40px;
+    grid-template-columns: repeat(4, 250px);
+}
 
+.Sec_2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 100px 50px 100px;
+}
+
+.card {
+    background-color: whitesmoke;
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+
+}
+
+.card_name {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.sport {
+    padding-top: 0px;
+}
+
+.cardImgSec {
+    display: flex;
+    flex-direction: column;
+}
+
+.car_img_box {
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.car_img {
+    width: 200px;
+    margin-top: 30px;
+}
+
+.card_icones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_price_btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.rent_btn {
+    background-color: #2756e2;
+    border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    height: 40px;
+    width: 100px;
+}
+
+.recomdSec {
+    margin-bottom: 40px;
+    margin-left: 100px;
+}
+
+.sec_4 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 100px 0px 600px;
+}
+
+.ShowMore {
+    height: 40px;
+    width: 150px;
+    background-color: #2756e2;
+    border-radius: 7px;
+    color: white;
+    border: 1px solid ;
+}
