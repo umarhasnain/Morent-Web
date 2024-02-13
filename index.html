@@ -13,10 +13,10 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<body class="body">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">MORENT</a>
+      <a class="navbar-brand" href="#" style="color: #2756e2; font-weight: bold;">MORENT</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -38,7 +38,7 @@
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-          <button class="btn btn-outline-success" type="submit">
+          <button class="btn " id="search_btn" type="submit">
             Search
           </button>
         </form>
@@ -57,7 +57,7 @@
         <a href="#" class="btn btn-primary">Rental Car</a>
       </div>
       <div class="main_sec_img">
-        <img height="150px" width="200px" src="./images/car.png" />
+        <img height="170px" width="250px" src="./images/car.png" />
       </div>
     </div>
 
@@ -71,75 +71,81 @@
         <a href="#" class="btn btn-primary">Rental Car</a>
       </div>
       <div class="main_sec_img">
-        <img height="150px" width="200px" src="./images/Car4.png" alt="" />
+        <img height="170px" width="250px" src="./images/Car4.png" alt="" />
       </div>
     </div>
   </div>
+  <div class="main-select">
 
-  <div class="mainSec1">
-    <div class="sec1">
-      <div class="dropdown">
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
-          <label class="form-check-label" for="flexRadioDefault2">
-            Pick-Up
-          </label>
+    <div class="pick-div">
+      <div class="radioBtn"><input type="radio">
+        <label for="Pick-Up">Pick-Up</label>
+      </div>
+      <div class="main_pick">
+
+        <div class="pick_location">
+
+
+          <h6>Locations</h6>
+          <select name="" id="Select">
+            <option value="">select your city</option>
+          </select>
+
         </div>
-        <h4>Locations</h4>
-        <button class="btn sec1_btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Select Your City
-        </button>
+        <div class="pick_date">
+          <h6>Date</h6>
+          <select name="" id="Select">
+            <option value="">select your date</option>
+          </select>
+        </div>
+        <div class="pick_time">
+          <h6>Time</h6>
+          <select name="" id="Select">
+            <option value="">select your time</option>
+          </select>
+        </div>
       </div>
-      <div class="dropdown">
-        <br />
-        <h4>Date</h4>
-        <button class="btn sec1_btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Select Your Date
-        </button>
-      </div>
-      <div class="dropdown">
-        <br />
-        <h4>Time</h4>
-        <button class="btn sec1_btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Select Your Time
-        </button>
-      </div>
+
+
     </div>
+    <div>
+      <button class="arrow_btn">
+        <i class="fa-solid fa-arrow-up" style="color: white;"></i>
+        <i class="fa-solid fa-arrow-down" style="color: white;"></i>
+      </button>
+    </div>
+    <div class="drop-div">
+      <div class="radioBtn"><input type="radio">
+        <label for="Pick-Up">Drop-Off</label>
+      </div>
+      <div class="main_pick">
 
-    <button class="btn_arrow">
-      <img height="40px" width="60px" src="./images/arr.png" alt="" />
-    </button>
+        <div class="pick_location">
 
-    <div class="sec1">
-      <div class="dropdown">
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
-          <label class="form-check-label" for="flexRadioDefault2">
-            Drop-Off
-          </label>
+
+          <h6>Locations</h6>
+          <select name="" id="Select">
+            <option value="">select your city</option>
+          </select>
+
         </div>
+        <div class="pick_date">
+          <h6>Date</h6>
+          <select name="" id="Select">
+            <option value="">select your date</option>
+          </select>
+        </div>
+        <div class="pick_time">
+          <h6>Time</h6>
+          <select name="" id="Select">
+            <option value="">select your time</option>
+          </select>
+        </div>
+      </div>
 
-        <h4>Locations</h4>
-        <button class="btn sec1_btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Select Your City
-        </button>
-      </div>
-      <div class="dropdown">
-        <br />
-        <h4>Date</h4>
-        <button class="btn sec1_btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Select Your Date
-        </button>
-      </div>
-      <div class="dropdown">
-        <br />
-        <h4>Time</h4>
-        <button class="btn sec1_btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Select Your Time
-        </button>
-      </div>
     </div>
   </div>
+
 
   <div class="Sec_2">
     <div>
@@ -182,7 +188,7 @@
 
       <div class="cardImgSec">
         <div class="car_img_box">
-          <img class="car_img" src="./images/Car3.png" alt="" />
+          <img class="car_img" src="./images/Car6.png" alt="" />
         </div>
         <div class="card_icones">
           <div class="icon"><i class="fa-solid fa-gas-pump"></i> 90L</div>
@@ -205,7 +211,7 @@
 
       <div class="cardImgSec">
         <div class="car_img_box">
-          <img class="car_img" src="./images/Car3.png" alt="" />
+          <img class="car_img" src="./images/Car4.png" alt="" />
         </div>
         <div class="card_icones">
           <div class="icon"><i class="fa-solid fa-gas-pump"></i> 90L</div>
@@ -228,7 +234,7 @@
 
       <div class="cardImgSec">
         <div class="car_img_box">
-          <img class="car_img" src="./images/Car3.png" alt="" />
+          <img class="car_img" src="./images/Car8.png" alt="" />
         </div>
         <div class="card_icones">
           <div class="icon"><i class="fa-solid fa-gas-pump"></i> 90L</div>
@@ -273,6 +279,144 @@
     <div class="card">
       <div class="card_name">
         <h5><span>Koenigsegg</span></h5>
+        <span><i class="fa-solid fa-heart"></i></span>
+      </div>
+      <div class="sport"><span>Sport</span></div>
+
+      <div class="cardImgSec">
+        <div class="car_img_box">
+          <img class="car_img" src="./images/Car6.png" alt="" />
+        </div>
+        <div class="card_icones">
+          <div class="icon"><i class="fa-solid fa-gas-pump"></i> 90L</div>
+          <div class="icon"> <img src="./images/wheel.ico" height="17px width20px" alt=""> Manual</div>
+          <div class="icon"><i class="fa-solid fa-user-group"></i> 2 People</div>
+        </div>
+      </div>
+      <div class="card_price_btn">
+        <div class="price_box"><span class="price">$99.00/</span>day</div>
+        <div><button class="rent_btn">Rent Now</button></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card_name">
+        <h5><span>Koenigsegg</span></h5>
+        <span><i class="fa-solid fa-heart"></i></span>
+      </div>
+      <div class="sport"><span>Sport</span></div>
+
+      <div class="cardImgSec">
+        <div class="car_img_box">
+          <img class="car_img" src="./images/Car7.png" alt="" />
+        </div>
+        <div class="card_icones">
+          <div class="icon"><i class="fa-solid fa-gas-pump"></i> 90L</div>
+          <div class="icon"> <img src="./images/wheel.ico" height="17px width20px" alt=""> Manual</div>
+          <div class="icon"><i class="fa-solid fa-user-group"></i> 2 People</div>
+        </div>
+      </div>
+      <div class="card_price_btn">
+        <div class="price_box"><span class="price">$99.00/</span>day</div>
+        <div><button class="rent_btn">Rent Now</button></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card_name">
+        <h5><span>Koenigsegg</span></h5>
+        <span><i class="fa-solid fa-heart"></i></span>
+      </div>
+      <div class="sport"><span>Sport</span></div>
+
+      <div class="cardImgSec">
+        <div class="car_img_box">
+          <img class="car_img" src="./images/Car8.png" alt="" />
+        </div>
+        <div class="card_icones">
+          <div class="icon"><i class="fa-solid fa-gas-pump"></i> 90L</div>
+          <div class="icon"> <img src="./images/wheel.ico" height="17px width20px" alt=""> Manual</div>
+          <div class="icon"><i class="fa-solid fa-user-group"></i> 2 People</div>
+        </div>
+      </div>
+      <div class="card_price_btn">
+        <div class="price_box"><span class="price">$99.00/</span>day</div>
+        <div><button class="rent_btn">Rent Now</button></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card_name">
+        <h5><span>Koenigsegg</span></h5>
+        <span><i class="fa-solid fa-heart"></i></span>
+      </div>
+      <div class="sport"><span>Sport</span></div>
+
+      <div class="cardImgSec">
+        <div class="car_img_box">
+          <img class="car_img" src="./images/car2.png" alt="" />
+        </div>
+        <div class="card_icones">
+          <div class="icon"><i class="fa-solid fa-gas-pump"></i> 90L</div>
+          <div class="icon"> <img src="./images/wheel.ico" height="17px width20px" alt=""> Manual</div>
+          <div class="icon"><i class="fa-solid fa-user-group"></i> 2 People</div>
+        </div>
+      </div>
+      <div class="card_price_btn">
+        <div class="price_box"><span class="price">$99.00/</span>day</div>
+        <div><button class="rent_btn">Rent Now</button></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card_name">
+        <h5><span>Koenigsegg</span></h5>
+        <span><i class="fa-regular fa-heart"></i></span>
+      </div>
+      <div class="sport"><span>Sport</span></div>
+
+      <div class="cardImgSec">
+        <div class="car_img_box">
+          <img class="car_img" src="./images/Car5.png" alt="" />
+        </div>
+        <div class="card_icones">
+          <div class="icon"><i class="fa-solid fa-gas-pump"></i> 90L</div>
+          <div class="icon"> <img src="./images/wheel.ico" height="17px width20px" alt=""> Manual</div>
+          <div class="icon"><i class="fa-solid fa-user-group"></i> 2 People</div>
+        </div>
+      </div>
+      <div class="card_price_btn">
+        <div class="price_box"><span class="price">$99.00/</span>day</div>
+        <div><button class="rent_btn">Rent Now</button></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card_name">
+        <h5><span>Koenigsegg</span></h5>
+        <span><i class="fa-solid fa-heart"></i></span>
+      </div>
+      <div class="sport"><span>Sport</span></div>
+
+      <div class="cardImgSec">
+        <div class="car_img_box">
+          <img class="car_img" src="./images/Car4.png" alt="" />
+        </div>
+        <div class="card_icones">
+          <div class="icon"><i class="fa-solid fa-gas-pump"></i> 90L</div>
+          <div class="icon"> <img src="./images/wheel.ico" height="17px width20px" alt=""> Manual</div>
+          <div class="icon"><i class="fa-solid fa-user-group"></i> 2 People</div>
+        </div>
+      </div>
+      <div class="card_price_btn">
+        <div class="price_box"><span class="price">$99.00/</span>day</div>
+        <div><button class="rent_btn">Rent Now</button></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card_name">
+        <h5><span>Koenigsegg</span></h5>
         <span><i class="fa-regular fa-heart"></i></span>
       </div>
       <div class="sport"><span>Sport</span></div>
@@ -325,7 +469,30 @@
 
       <div class="cardImgSec">
         <div class="car_img_box">
-          <img class="car_img" src="./images/Car3.png" alt="" />
+          <img class="car_img" src="./images/Car2.png" alt="" />
+        </div>
+        <div class="card_icones">
+          <div class="icon"><i class="fa-solid fa-gas-pump"></i> 90L</div>
+          <div class="icon"> <img src="./images/wheel.ico" height="17px width20px" alt=""> Manual</div>
+          <div class="icon"><i class="fa-solid fa-user-group"></i> 2 People</div>
+        </div>
+      </div>
+      <div class="card_price_btn">
+        <div class="price_box"><span class="price">$99.00/</span>day</div>
+        <div><button class="rent_btn">Rent Now</button></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card_name">
+        <h5><span>Koenigsegg</span></h5>
+        <span><i class="fa-solid fa-heart"></i></span>
+      </div>
+      <div class="sport"><span>Sport</span></div>
+
+      <div class="cardImgSec">
+        <div class="car_img_box">
+          <img class="car_img" src="./images/Car5.png" alt="" />
         </div>
         <div class="card_icones">
           <div class="icon"><i class="fa-solid fa-gas-pump"></i> 90L</div>
@@ -348,76 +515,7 @@
 
       <div class="cardImgSec">
         <div class="car_img_box">
-          <img class="car_img" src="./images/Car3.png" alt="" />
-        </div>
-        <div class="card_icones">
-          <div class="icon"><i class="fa-solid fa-gas-pump"></i> 90L</div>
-          <div class="icon"> <img src="./images/wheel.ico" height="17px width20px" alt=""> Manual</div>
-          <div class="icon"><i class="fa-solid fa-user-group"></i> 2 People</div>
-        </div>
-      </div>
-      <div class="card_price_btn">
-        <div class="price_box"><span class="price">$99.00/</span>day</div>
-        <div><button class="rent_btn">Rent Now</button></div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card_name">
-        <h5><span>Koenigsegg</span></h5>
-        <span><i class="fa-regular fa-heart"></i></span>
-      </div>
-      <div class="sport"><span>Sport</span></div>
-
-      <div class="cardImgSec">
-        <div class="car_img_box">
-          <img class="car_img" src="./images/Car3.png" alt="" />
-        </div>
-        <div class="card_icones">
-          <div class="icon"><i class="fa-solid fa-gas-pump"></i> 90L</div>
-          <div class="icon"> <img src="./images/wheel.ico" height="17px width20px" alt=""> Manual</div>
-          <div class="icon"><i class="fa-solid fa-user-group"></i> 2 People</div>
-        </div>
-      </div>
-      <div class="card_price_btn">
-        <div class="price_box"><span class="price">$99.00/</span>day</div>
-        <div><button class="rent_btn">Rent Now</button></div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card_name">
-        <h5><span>Koenigsegg</span></h5>
-        <span><i class="fa-regular fa-heart"></i></span>
-      </div>
-      <div class="sport"><span>Sport</span></div>
-
-      <div class="cardImgSec">
-        <div class="car_img_box">
-          <img class="car_img" src="./images/Car3.png" alt="" />
-        </div>
-        <div class="card_icones">
-          <div class="icon"><i class="fa-solid fa-gas-pump"></i> 90L</div>
-          <div class="icon"> <img src="./images/wheel.ico" height="17px width20px" alt=""> Manual</div>
-          <div class="icon"><i class="fa-solid fa-user-group"></i> 2 People</div>
-        </div>
-      </div>
-      <div class="card_price_btn">
-        <div class="price_box"><span class="price">$99.00/</span>day</div>
-        <div><button class="rent_btn">Rent Now</button></div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card_name">
-        <h5><span>Koenigsegg</span></h5>
-        <span><i class="fa-regular fa-heart"></i></span>
-      </div>
-      <div class="sport"><span>Sport</span></div>
-
-      <div class="cardImgSec">
-        <div class="car_img_box">
-          <img class="car_img" src="./images/Car3.png" alt="" />
+          <img class="car_img" src="./images/Car8.png" alt="" />
         </div>
         <div class="card_icones">
           <div class="icon"><i class="fa-solid fa-gas-pump"></i> 90L</div>
@@ -442,6 +540,64 @@
       <span>
         120 Car
       </span>
+    </div>
+  </div>
+
+  <footer class="foot">
+    <div class="foot_text">
+      <h1>
+        MORENT
+      </h1>
+      <P>
+        Our Vision is to provide convenience <br> and help increase your sales business.
+      </P>
+    </div>
+    <div class="foot_list">
+      <ul>
+        <li>
+          <h3>About</h3>
+        </li>
+        <li>How it works</li>
+        <li>Featured</li>
+        <li>Patnership</li>
+        <li>Business Relation</li>
+      </ul>
+    </div>
+    <div class="foot_list">
+      <ul>
+        <li>
+          <h3>Community</h3>
+        </li>
+        <li>Events</li>
+        <li>Blogs</li>
+        <li>Podcast</li>
+        <li>Invite a friend</li>
+      </ul>
+    </div>
+    <div class="foot_list">
+      <ul>
+        <li>
+          <h3>Socials</h3>
+        </li>
+        <li>Discord</li>
+        <li>Instagram</li>
+        <li>Twitter</li>
+        <li>Facebook</li>
+      </ul>
+    </div>
+
+  </footer>
+
+  <div class="line">
+    <hr>
+  </div>
+  <div class="last_sec">
+    <div class="last_sec_data">
+      <h6>© 20222 MORENT. All rights reserved</h6>
+    </div>
+    <div class="last_sec_text">
+      <h6>Privacy & Policy</h6>
+      <h6>Terms and Condition</h6>
     </div>
   </div>
 
