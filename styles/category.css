@@ -1,0 +1,422 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: whitesmoke
+}
+
+#navbar {
+    padding-left: 100px;
+    font-size: 20px;
+    background-color: aliceblue;
+}
+
+#search_btn {
+    border-radius: 5px;
+    background-color: #2756e2;
+    color: white;
+}
+
+.left_bar {
+    height: 1300px;
+    width: 320px;
+    padding-top: 50px;
+    background-color: white
+}
+
+.leftBar_1>ul {
+    list-style-type: none;
+}
+
+.leftBar_2>ul {
+    list-style-type: none;
+}
+
+.list_span {
+    padding-left: 10px;
+}
+
+.leftBar_3 {
+    padding-left: 30px;
+}
+
+
+
+.main-select {
+    display: flex;
+    width: 90%;
+    padding-top: 50px;
+    margin-left: 60px;
+    padding-right: 10px;
+}
+
+.pick-div {
+    height: 130px;
+    width: 500px;
+    padding-bottom: 40px;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 5px;
+    padding-right: 10px;
+    border-radius: 5px;
+
+
+}
+
+.drop-div {
+    height: 130px;
+    width: 500px;
+    margin-right: 5px;
+    padding-right: 15px;
+    margin-left: 5px;
+    padding-bottom: 40px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#Select {
+    text-decoration: none;
+    border: none;
+    background-color: white;
+
+}
+
+.main_pick {
+    display: flex;
+    padding-left: 10px;
+    gap: 20px;
+
+}
+
+.pick_location {
+    border-right: 1px solid gray;
+    padding-right: 15px;
+
+}
+
+.pick_date {
+    border-right: 1px solid gray;
+    padding-right: 15px;
+
+}
+
+.radioBtn {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+
+.arrow_btn {
+    height: 60px;
+    width: 60px;
+    background-color: #2756e2;
+    border-color: white;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+@media only screen and (max-width:1230px)and (min-width:300px) {
+    .main-select {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+        margin-left: 70px;
+        margin-right: 90px;
+        margin-bottom: 50px;
+
+    }
+}
+
+@media only screen and (max-width:620px) {
+    .main-select {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+        margin-left: 50px;
+        margin-right: 80px;
+        margin-bottom: 50px;
+
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .main-select {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 5px;
+        margin-left: 10px;
+        margin-right: 20px;
+        margin-bottom: 50px;
+
+
+    }
+}
+
+
+.heroSection {
+    display: flex;
+    gap: 10px;
+
+}
+
+.sec_car_container1 {
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    grid-template-columns: repeat(4, 250px);
+    padding-top: 20px;
+    margin-left: 40px;
+
+}
+
+.Sec_2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 100px 50px 100px;
+}
+
+.card {
+    background-color: whitesmoke;
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+
+}
+
+.card_name {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.sport {
+    padding-top: 0px;
+}
+
+.cardImgSec {
+    display: flex;
+    flex-direction: column;
+}
+
+.car_img_box {
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.car_img {
+    width: 200px;
+    margin-top: 30px;
+}
+
+.card_icones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_price_btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.rent_btn {
+    background-color: #2756e2;
+    border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    height: 40px;
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.foot {
+    display: flex;
+    justify-content: space-around;
+    margin: 120px 100px 60px 85px;
+}
+
+.foot_list {
+    font-size: 20px;
+    gap: 40px;
+}
+
+.foot_list>ul {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.foot_list>ul>li {
+    padding: 10px 0px 10px 0px;
+    font-size: 20px;
+    color: gray;
+}
+
+.foot_text {
+    width: 50%;
+    padding-right: 270px;
+}
+
+.foot_text>p {
+    color: gray;
+}
+
+.foot_text>h1 {
+    color: #2756e2;
+}
+
+.last_sec {
+    display: flex;
+    padding-left: 100px;
+    font-size: 20px;
+}
+
+.last_sec_data {
+    font-size: 20px;
+}
+
+.last_sec_text {
+    display: flex;
+    gap: 50px;
+    padding-left: 560px;
+}
+
+.line {
+    margin-left: 93px;
+    margin-right: 93px;
+}
+
+@media screen and (max-width:1180px) {
+    .foot {
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(2, 250px);
+    }
+
+    .foot_text {
+        width: 50%;
+        padding-right: 40px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .foot {
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(1, 250px);
+    }
+
+    .foot_text {
+        width: 50%;
+        padding-right: 40px;
+    }
+}
+
+@media screen and (max-width:1180px) {
+    .last_sec {
+        display: flex;
+        padding-left: 80px;
+        font-size: 20px;
+
+    }
+
+    .last_sec_data {
+        font-size: 20px;
+    }
+
+    .last_sec_text {
+        display: flex;
+        gap: 40px;
+        padding-left: 400px;
+    }
+
+}
+
+@media screen and (max-width:1150px) {
+    .last_sec {
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        padding-left: 50px;
+        font-size: 20px;
+    }
+
+    .last_sec_data {
+        font-size: 20px;
+    }
+
+    .last_sec_text {
+        display: flex;
+        gap: 40px;
+        padding-left: 350px;
+    }
+
+}
+
+@media screen and (max-width:930px) {
+    .last_sec {
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        padding-left: 30px;
+        font-size: 20px;
+    }
+
+    .last_sec_data {
+        font-size: 20px;
+    }
+
+    .last_sec_text {
+        display: flex;
+        gap: 40px;
+        padding-left: 150px;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    .last_sec {
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        padding-left: 60px;
+        font-size: 20px;
+    }
+
+    .last_sec_data {
+        font-size: 20px;
+    }
+
+    .last_sec_text {
+        display: flex;
+        gap: 40px;
+        padding-left: 80px;
+    }
+
+}

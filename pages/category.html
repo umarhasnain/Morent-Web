@@ -1,54 +1,511 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Category</title>
-    <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-    crossorigin="anonymous"
-  />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category</title>
+  <link rel="stylesheet" href="/styles/category.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">MORENT</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+
+<body class="body">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color: #2756e2; font-weight: bold;">MORENT</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Category</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./details.html">Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./payment.html">Payment</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="heroSection">
+    <div class="left_bar">
+      <div class="leftBar_1">
+        <ul>
+          <h6>TYPE</h6>
+          <li> <input type="checkbox" checked><span class="list_span">Sport(10)</span></li>
+          <li><input type="checkbox" checked><span class="list_span">SUV(12)</span></li>
+          <li><input type="checkbox"><span class="list_span">MPV(16)</span></li>
+          <li><input type="checkbox"><span class="list_span">Sedan(20)</span></li>
+          <li><input type="checkbox"><span class="list_span">Couple(14)</span></li>
+          <li><input type="checkbox"><span class="list_span">Hatchback(14)</span></li>
+        </ul>
+      </div>
+      <div class="leftBar_2">
+        <ul>
+          <h6>CAPACITY</h6>
+          <li> <input type="checkbox" checked><span class="list_span">2 Person (10)</span></li>
+          <li> <input type="checkbox"><span class="list_span">4 Person (14)</span></li>
+          <li> <input type="checkbox"><span class="list_span">6 Person (12)</span></li>
+          <li> <input type="checkbox" checked><span class="list_span">8 or More (16)</span></li>
+
+        </ul>
+      </div>
+      <div class="leftBar_3">
+        <h6>PRICE</h6>
+        <input type="range">
+        <h5>Max.$100.00</h5>
+      </div>
+    </div>
+    <div class="mainSel">
+
+      <div class="main-select">
+
+
+        <div class="pick-div">
+          <div class="radioBtn"><input type="radio">
+            <label for="Pick-Up">Pick-Up</label>
+          </div>
+          <div class="main_pick">
+
+            <div class="pick_location">
+
+
+              <h6>Locations</h6>
+              <select name="" id="Select">
+                <option value="">select your city</option>
+              </select>
+
+            </div>
+            <div class="pick_date">
+              <h6>Date</h6>
+              <select name="" id="Select">
+                <option value="">select your date</option>
+              </select>
+            </div>
+            <div class="pick_time">
+              <h6>Time</h6>
+              <select name="" id="Select">
+                <option value="">select your time</option>
+              </select>
+            </div>
+          </div>
+
+
+        </div>
+        <div>
+          <button class="arrow_btn">
+            <i class="fa-solid fa-arrow-up" style="color: white;"></i>
+            <i class="fa-solid fa-arrow-down" style="color: white;"></i>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Category</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./details.html">Details</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./payment.html">Payment</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+        </div>
+        <div class="drop-div">
+          <div class="radioBtn"><input type="radio">
+            <label for="Pick-Up">Drop-Off</label>
+          </div>
+          <div class="main_pick">
+
+            <div class="pick_location">
+
+
+              <h6>Locations</h6>
+              <select name="" id="Select">
+                <option value="">select your city</option>
+              </select>
+
+            </div>
+            <div class="pick_date">
+              <h6>Date</h6>
+              <select name="" id="Select">
+                <option value="">select your date</option>
+              </select>
+            </div>
+            <div class="pick_time">
+              <h6>Time</h6>
+              <select name="" id="Select">
+                <option value="">select your time</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="sec_car_container1">
+        <div class="card">
+          <div class="card_name">
+            <h5><span>Koenigsegg</span></h5>
+            <span><i class="fa-solid fa-heart"></i></span>
+          </div>
+          <div class="sport"><span>Sport</span></div>
+
+          <div class="cardImgSec">
+            <div class="car_img_box">
+              <img class="car_img" src="/images/Car3.png" alt="" />
+            </div>
+            <div class="card_icones">
+              <div class="icon"><i class="fa-solid fa-gas-pump"></i> 90L</div>
+              <div class="icon"> <img src="./images/wheel.ico" height="17px width20px" alt=""> Manual</div>
+              <div class="icon"><i class="fa-solid fa-user-group"></i> 2 People</div>
+            </div>
+          </div>
+          <div class="card_price_btn">
+            <div class="price_box"><span class="price">$99.00/</span>day</div>
+            <div><button class="rent_btn">Rent Now</button></div>
           </div>
         </div>
-      </nav>
 
-      <h1>Category</h1>
+        <div class="card">
+          <div class="card_name">
+            <h5><span>Koenigsegg</span></h5>
+            <span><i class="fa-solid fa-heart"></i></span>
+          </div>
+          <div class="sport"><span>Sport</span></div>
 
-    
+          <div class="cardImgSec">
+            <div class="car_img_box">
+              <img class="car_img" src="/images/Car3.png" alt="" />
+            </div>
+            <div class="card_icones">
+              <div class="icon"><i class="fa-solid fa-gas-pump"></i> 90L</div>
+              <div class="icon"> <img src="./images/wheel.ico" height="17px width20px" alt=""> Manual</div>
+              <div class="icon"><i class="fa-solid fa-user-group"></i> 2 People</div>
+            </div>
+          </div>
+          <div class="card_price_btn">
+            <div class="price_box"><span class="price">$99.00/</span>day</div>
+            <div><button class="rent_btn">Rent Now</button></div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card_name">
+            <h5><span>Koenigsegg</span></h5>
+            <span><i class="fa-solid fa-heart"></i></span>
+          </div>
+          <div class="sport"><span>Sport</span></div>
+
+          <div class="cardImgSec">
+            <div class="car_img_box">
+              <img class="car_img" src="/images/Car3.png" alt="" />
+            </div>
+            <div class="card_icones">
+              <div class="icon"><i class="fa-solid fa-gas-pump"></i> 90L</div>
+              <div class="icon"> <img src="./images/wheel.ico" height="17px width20px" alt=""> Manual</div>
+              <div class="icon"><i class="fa-solid fa-user-group"></i> 2 People</div>
+            </div>
+          </div>
+          <div class="card_price_btn">
+            <div class="price_box"><span class="price">$99.00/</span>day</div>
+            <div><button class="rent_btn">Rent Now</button></div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card_name">
+            <h5><span>Koenigsegg</span></h5>
+            <span><i class="fa-solid fa-heart"></i></span>
+          </div>
+          <div class="sport"><span>Sport</span></div>
+
+          <div class="cardImgSec">
+            <div class="car_img_box">
+              <img class="car_img" src="/images/Car3.png" alt="" />
+            </div>
+            <div class="card_icones">
+              <div class="icon"><i class="fa-solid fa-gas-pump"></i> 90L</div>
+              <div class="icon"> <img src="./images/wheel.ico" height="17px width20px" alt=""> Manual</div>
+              <div class="icon"><i class="fa-solid fa-user-group"></i> 2 People</div>
+            </div>
+          </div>
+          <div class="card_price_btn">
+            <div class="price_box"><span class="price">$99.00/</span>day</div>
+            <div><button class="rent_btn">Rent Now</button></div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card_name">
+            <h5><span>Koenigsegg</span></h5>
+            <span><i class="fa-solid fa-heart"></i></span>
+          </div>
+          <div class="sport"><span>Sport</span></div>
+
+          <div class="cardImgSec">
+            <div class="car_img_box">
+              <img class="car_img" src="/images/Car3.png" alt="" />
+            </div>
+            <div class="card_icones">
+              <div class="icon"><i class="fa-solid fa-gas-pump"></i> 90L</div>
+              <div class="icon"> <img src="./images/wheel.ico" height="17px width20px" alt=""> Manual</div>
+              <div class="icon"><i class="fa-solid fa-user-group"></i> 2 People</div>
+            </div>
+          </div>
+          <div class="card_price_btn">
+            <div class="price_box"><span class="price">$99.00/</span>day</div>
+            <div><button class="rent_btn">Rent Now</button></div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card_name">
+            <h5><span>Koenigsegg</span></h5>
+            <span><i class="fa-solid fa-heart"></i></span>
+          </div>
+          <div class="sport"><span>Sport</span></div>
+
+          <div class="cardImgSec">
+            <div class="car_img_box">
+              <img class="car_img" src="/images/Car3.png" alt="" />
+            </div>
+            <div class="card_icones">
+              <div class="icon"><i class="fa-solid fa-gas-pump"></i> 90L</div>
+              <div class="icon"> <img src="./images/wheel.ico" height="17px width20px" alt=""> Manual</div>
+              <div class="icon"><i class="fa-solid fa-user-group"></i> 2 People</div>
+            </div>
+          </div>
+          <div class="card_price_btn">
+            <div class="price_box"><span class="price">$99.00/</span>day</div>
+            <div><button class="rent_btn">Rent Now</button></div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card_name">
+            <h5><span>Koenigsegg</span></h5>
+            <span><i class="fa-solid fa-heart"></i></span>
+          </div>
+          <div class="sport"><span>Sport</span></div>
+
+          <div class="cardImgSec">
+            <div class="car_img_box">
+              <img class="car_img" src="/images/Car3.png" alt="" />
+            </div>
+            <div class="card_icones">
+              <div class="icon"><i class="fa-solid fa-gas-pump"></i> 90L</div>
+              <div class="icon"> <img src="./images/wheel.ico" height="17px width20px" alt=""> Manual</div>
+              <div class="icon"><i class="fa-solid fa-user-group"></i> 2 People</div>
+            </div>
+          </div>
+          <div class="card_price_btn">
+            <div class="price_box"><span class="price">$99.00/</span>day</div>
+            <div><button class="rent_btn">Rent Now</button></div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card_name">
+            <h5><span>Koenigsegg</span></h5>
+            <span><i class="fa-solid fa-heart"></i></span>
+          </div>
+          <div class="sport"><span>Sport</span></div>
+
+          <div class="cardImgSec">
+            <div class="car_img_box">
+              <img class="car_img" src="/images/Car3.png" alt="" />
+            </div>
+            <div class="card_icones">
+              <div class="icon"><i class="fa-solid fa-gas-pump"></i> 90L</div>
+              <div class="icon"> <img src="./images/wheel.ico" height="17px width20px" alt=""> Manual</div>
+              <div class="icon"><i class="fa-solid fa-user-group"></i> 2 People</div>
+            </div>
+          </div>
+          <div class="card_price_btn">
+            <div class="price_box"><span class="price">$99.00/</span>day</div>
+            <div><button class="rent_btn">Rent Now</button></div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card_name">
+            <h5><span>Koenigsegg</span></h5>
+            <span><i class="fa-solid fa-heart"></i></span>
+          </div>
+          <div class="sport"><span>Sport</span></div>
+
+          <div class="cardImgSec">
+            <div class="car_img_box">
+              <img class="car_img" src="/images/Car3.png" alt="" />
+            </div>
+            <div class="card_icones">
+              <div class="icon"><i class="fa-solid fa-gas-pump"></i> 90L</div>
+              <div class="icon"> <img src="./images/wheel.ico" height="17px width20px" alt=""> Manual</div>
+              <div class="icon"><i class="fa-solid fa-user-group"></i> 2 People</div>
+            </div>
+          </div>
+          <div class="card_price_btn">
+            <div class="price_box"><span class="price">$99.00/</span>day</div>
+            <div><button class="rent_btn">Rent Now</button></div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card_name">
+            <h5><span>Koenigsegg</span></h5>
+            <span><i class="fa-solid fa-heart"></i></span>
+          </div>
+          <div class="sport"><span>Sport</span></div>
+
+          <div class="cardImgSec">
+            <div class="car_img_box">
+              <img class="car_img" src="/images/Car3.png" alt="" />
+            </div>
+            <div class="card_icones">
+              <div class="icon"><i class="fa-solid fa-gas-pump"></i> 90L</div>
+              <div class="icon"> <img src="./images/wheel.ico" height="17px width20px" alt=""> Manual</div>
+              <div class="icon"><i class="fa-solid fa-user-group"></i> 2 People</div>
+            </div>
+          </div>
+          <div class="card_price_btn">
+            <div class="price_box"><span class="price">$99.00/</span>day</div>
+            <div><button class="rent_btn">Rent Now</button></div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card_name">
+            <h5><span>Koenigsegg</span></h5>
+            <span><i class="fa-solid fa-heart"></i></span>
+          </div>
+          <div class="sport"><span>Sport</span></div>
+
+          <div class="cardImgSec">
+            <div class="car_img_box">
+              <img class="car_img" src="/images/Car3.png" alt="" />
+            </div>
+            <div class="card_icones">
+              <div class="icon"><i class="fa-solid fa-gas-pump"></i> 90L</div>
+              <div class="icon"> <img src="./images/wheel.ico" height="17px width20px" alt=""> Manual</div>
+              <div class="icon"><i class="fa-solid fa-user-group"></i> 2 People</div>
+            </div>
+          </div>
+          <div class="card_price_btn">
+            <div class="price_box"><span class="price">$99.00/</span>day</div>
+            <div><button class="rent_btn">Rent Now</button></div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card_name">
+            <h5><span>Koenigsegg</span></h5>
+            <span><i class="fa-solid fa-heart"></i></span>
+          </div>
+          <div class="sport"><span>Sport</span></div>
+
+          <div class="cardImgSec">
+            <div class="car_img_box">
+              <img class="car_img" src="/images/Car3.png" alt="" />
+            </div>
+            <div class="card_icones">
+              <div class="icon"><i class="fa-solid fa-gas-pump"></i> 90L</div>
+              <div class="icon"> <img src="./images/wheel.ico" height="17px width20px" alt=""> Manual</div>
+              <div class="icon"><i class="fa-solid fa-user-group"></i> 2 People</div>
+            </div>
+          </div>
+          <div class="card_price_btn">
+            <div class="price_box"><span class="price">$99.00/</span>day</div>
+            <div><button class="rent_btn">Rent Now</button></div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <footer class="foot">
+    <div class="foot_text">
+      <h1>
+        MORENT
+      </h1>
+      <P>
+        Our Vision is to provide convenience <br> and help increase your sales business.
+      </P>
+    </div>
+    <div class="foot_list">
+      <ul>
+        <li>
+          <h3>About</h3>
+        </li>
+        <li>How it works</li>
+        <li>Featured</li>
+        <li>Patnership</li>
+        <li>Business Relation</li>
+      </ul>
+    </div>
+    <div class="foot_list">
+      <ul>
+        <li>
+          <h3>Community</h3>
+        </li>
+        <li>Events</li>
+        <li>Blogs</li>
+        <li>Podcast</li>
+        <li>Invite a friend</li>
+      </ul>
+    </div>
+    <div class="foot_list">
+      <ul>
+        <li>
+          <h3>Socials</h3>
+        </li>
+        <li>Discord</li>
+        <li>Instagram</li>
+        <li>Twitter</li>
+        <li>Facebook</li>
+      </ul>
+    </div>
+
+  </footer>
+
+  <div class="line">
+    <hr>
+  </div>
+  <div class="last_sec">
+    <div class="last_sec_data">
+      <h6>© 20222 MORENT. All rights reserved</h6>
+    </div>
+    <div class="last_sec_text">
+      <h6>Privacy & Policy</h6>
+      <h6>Terms and Condition</h6>
+    </div>
+  </div>
 </body>
 
-<script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-crossorigin="anonymous"
-></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </html>
