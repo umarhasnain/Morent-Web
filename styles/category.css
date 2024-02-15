@@ -22,7 +22,7 @@
 
 .left_bar {
     height: 1300px;
-    width: 320px;
+    width: 250px;
     padding-top: 50px;
     background-color: white
 }
@@ -47,33 +47,33 @@
 
 .main-select {
     display: flex;
-    width: 90%;
+    width: 100%;
     padding-top: 50px;
-    margin-left: 60px;
-    padding-right: 10px;
+    padding-right: 5px;
 }
 
 .pick-div {
     height: 130px;
-    width: 500px;
+    width: 400px;
     padding-bottom: 40px;
     background-color: white;
-    margin-left: 10px;
-    margin-right: 5px;
+    margin-left: 20px;
     padding-right: 10px;
     border-radius: 5px;
+    font-size: 11.50px;
 
 
 }
 
 .drop-div {
     height: 130px;
-    width: 500px;
-    margin-right: 5px;
-    padding-right: 15px;
+    width: 400px;
+    font-size: 11.50px;
+    padding-right: 10px;
+    margin-right: 0px;
     margin-left: 5px;
     padding-bottom: 40px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 5px;
 }
 
@@ -129,6 +129,11 @@
         margin-bottom: 50px;
 
     }
+
+    .arr_btn {
+        background-color: rebeccapurple;
+        margin-right: 100px;
+    }
 }
 
 @media only screen and (max-width:620px) {
@@ -168,11 +173,12 @@
 .sec_car_container1 {
     display: grid;
     justify-content: center;
-    gap: 20px;
+    row-gap: 30px;
+    column-gap: 10px;
     margin-bottom: 40px;
-    grid-template-columns: repeat(4, 250px);
+    grid-template-columns: repeat(3, 300px);
     padding-top: 20px;
-    margin-left: 40px;
+    margin-left: 20px;
 
 }
 
@@ -243,9 +249,63 @@
     width: 100px;
 }
 
+.last-sec-btn {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.btn {
+    border: none;
+    text-decoration: none;
+    margin-left: 350px;
+}
+
+.btn>button {
+    height: 40px;
+    width: 150px;
+    color: white;
+    background-color: #2756e2;
+    border-radius: 5px;
+
+    border: none;
+
+}
+
+.car_span {
+    margin-right: 50px;
+}
 
 
 
+/* ***************** Card Responsiveness************* */
+
+
+@media only screen and (max-width:1550px)and(min-width:1025px) {
+    .sec_car_container1 {
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        gap: 20px;
+        column-gap: 0px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:796px)and(max-width:1024px) {
+    .sec_car_container1 {
+        display: grid;
+        grid-template-columns: repeat(2, 280px);
+
+    }
+
+    .left_bar {
+        display: none;
+    }
+
+}
 
 
 
@@ -263,6 +323,7 @@
     display: flex;
     justify-content: space-around;
     margin: 120px 100px 60px 85px;
+    background-color: white;
 }
 
 .foot_list {
