@@ -1,3 +1,9 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
 #navbar {
     padding-left: 100px;
     font-size: 20px;
@@ -8,4 +14,82 @@
     border-radius: 5px;
     background-color: #2756e2;
     color: white;
+}
+
+.heroSectin {
+    gap: 30px;
+    row-gap: 30px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.herosec1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.billing_info {
+    border-radius: 10px;
+    height: 300px;
+    width: 700px;
+    margin-bottom: 30px;
+    background-color: red;
+}
+
+.billing_info>h4 {
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.billing_text {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.inputBiling {
+    display: flex;
+    gap: 60px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.inputBiling>div>input {
+    border: 1px solid white;
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 10px;
+
+}
+
+.rental_info {
+
+    height: 650px;
+    width: 700px;
+    background-color: blue;
+}
+
+.rental_summury {
+    height: 600px;
+    width: 450px;
+    background-color: violet;
+    margin-right: 100px;
+    margin-top: 100px;
+    float: right;
+}
+
+.payment_method {
+    height: 300px;
+    width: 400px;
+    margin-bottom: 30px;
+    background-color: red;
+}
+
+.payment_confirmation {
+    height: 400px;
+    width: 400px;
+    background: turquoise;
 }
