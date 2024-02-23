@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.body {
+    background-color: whitesmoke;
+}
+
 #navbar {
     padding-left: 100px;
     font-size: 20px;
@@ -34,7 +38,7 @@
     height: 300px;
     width: 700px;
     margin-bottom: 30px;
-    background-color: red;
+    background-color: white;
 }
 
 .billing_info>h4 {
@@ -52,8 +56,8 @@
 .inputBiling {
     display: flex;
     gap: 60px;
-    margin-left: 30px;
     margin-bottom: 30px;
+    padding-left: 20px;
     font-size: 20px;
 }
 
@@ -65,6 +69,13 @@
 
 }
 
+#input {
+    background-color: whitesmoke;
+    border: 1px solid white;
+    height: 50px;
+    width: 290px;
+}
+
 .rental_info {
 
     height: 650px;
@@ -73,23 +84,164 @@
 }
 
 .rental_summury {
-    height: 600px;
-    width: 450px;
-    background-color: violet;
-    margin-right: 100px;
-    margin-top: 100px;
+    height: 650px;
+    width: 540px;
+    border-radius: 5px;
+    background-color: white;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
     float: right;
 }
 
-.payment_method {
-    height: 300px;
+.img {
+    height: 110px;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    background-color: #2756e2;
+}
+
+.text {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.rent_details {
+    height: 100px;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 80px;
+
+}
+
+.rent_total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.subtotal_div {
+    margin-top: 20px;
+}
+
+.PromoCode {
+    background-color: whitesmoke;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 400px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-left: 40px;
+    margin-top: 30px;
     margin-bottom: 30px;
-    background-color: red;
+}
+
+.final_rent {
+    display: flex;
+}
+
+.rent_price>h4 {
+    padding-left: 40px;
+    font-size: 40px;
+}
+
+.payment_method {
+    border-radius: 10px;
+    height: 600px;
+    width: 700px;
+    margin-bottom: 30px;
+    background-color: rgb(204, 0, 0);
 }
 
 .payment_confirmation {
-    height: 400px;
-    width: 400px;
-    background: turquoise;
+    padding: 30px 30px 30px 30px;
+    border-radius: 10px;
+    height: 500px;
+    width: 700px;
+    margin-bottom: 30px;
+    background-color: rgb(11, 255, 80);
+}
+
+.billing_info1 {
+    border-radius: 10px;
+    height: 370px;
+    width: 700px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: white;
+}
+
+.inputBiling1 {
+    background-color: whitesmoke;
+}
+
+.billing_text1 {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+.payment_radio {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.inputForPayment {
+    background-color: white;
+}
+
+.payment_Sec {
+    border-radius: 10px;
+    background-color: whitesmoke;
+    margin-right: 20px;
+    padding-bottom: 5px;
+}
+
+
+.visaDiv {
+    margin-bottom: 20px;
+}
+
+.confir_text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.check {
+    height: 50px;
+    width: 620px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-top: 15px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+.check_label {
+    padding-left: 10px
+}
+
+.btn>button {
+    height: 50px;
+    width: 120px;
+    background-color: #2756e2;
+    color: white;
+    border: white;
+    border-radius: 5px;
+}
+
+.last_text {
+
+    margin-top: 30px;
 }
