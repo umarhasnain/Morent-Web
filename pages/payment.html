@@ -38,182 +38,352 @@
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button class="btn btn-outline-success" id="search_btn" type="submit">Search</button>
         </form>
       </div>
     </div>
   </nav>
 
-  <div class="heroSectin">
-    <div class="herosec1">
-      <div class="rental_summury">
-        <div>
-          <h3>Rental Summary</h3>
-          <p>Prices may change depending on the lenth of th erental and the price of your rental car.</p>
+
+
+
+  <div class="container">
+    <div class="child1-container">
+
+        <div class="child1-portion1">
+            <h2 style="font-size: 20px; margin-bottom: 5px;">Billing Info</h2>
+            <div class="portion1-section1">
+                <span>Please Enter your Billing Info</span>
+                <span>Step 1 Of 4</span>
+            </div>
+
+            <div class="portion1-section2">
+                <div class="subcontent">
+                    <h3 class="sub-heading">Name</h3>
+                    <input type="text" class="inputfield" placeholder="   Type Your Name">
+                </div>
+                <div class="subcontent">
+                    <h3 class="sub-heading">Phone Number</h3>
+                    <input type="text" class="inputfield" placeholder="   Type Your Phone Number">
+                </div>
+                <div class="subcontent">
+                    <h3 class="sub-heading">Address</h3>
+                    <input type="text" class="inputfield" placeholder="   Type Your Address">
+                </div>
+                <div class="subcontent">
+                    <h3 class="sub-heading">Town/City</h3>
+                    <input type="text" class="inputfield" placeholder="   Town/City">
+                </div>
+            </div>
+
+
         </div>
-        <div class="rent_details">
-          <div class="img">
-            <img src="/images/car.png" height="100px" width="150px" alt="">
-          </div>
-          <div class="text">
-            <h2>Nisaan GT-R</h2>
-            <span><i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              440+ Reviewer
-            </span>
+        <div class="child1-portion2">
+            <h2 style="font-size: 20px; margin-bottom: 5px;">Rental Info</h2>
+            <div class="portion1-section1">
+                <span>Please Select your Rental Date</span>
+                <span>Step 2 Of 4</span>
+            </div>
+            <br>
+            <span><input type="radio"><span>Pick-Up</span> </span>
+
+            <div class="portion1-section2">
+                <div class="subcontent">
+                    <h3 class="sub-heading">Location</h3>
+                    <select class="inputfield">
+                        <option value="location"> Select Your City</option>
+                        <option value="Karachi"> Karachi</option>
+                        <option value="Islamabad"> Islamabad</option>
+                        <option value="Faisalabad"> Faisalabad</option>
+                        <option value="Peshawar"> Peshawar</option>
+                        <option value="Lahore"> Lahore</option>
+                    </select>
+                </div>
+                <div class="subcontent">
+                    <h3 class="sub-heading">Location</h3>
+                    <select class="inputfield">
+                        <option value="location"> Select Your Date</option>
+                        <option value="Karachi"> 21-jan-2021</option>
+                        <option value="Karachi"> 22-jan-2021</option>
+                        <option value="Karachi"> 23-jan-2021</option>
+                        <option value="Karachi"> 24-jan-2021</option>
+                        <option value="Karachi"> 25-jan-2021</option>
+
+                    </select>
+                </div>
+                <div class="subcontent">
+                    <h3 class="sub-heading">Time</h3>
+                    <select class="inputfield">
+                        <option value="location"> Select Your Time</option>
+                        <option value="Karachi"> 7:00 AM - 8:00 AM</option>
+                        <option value="Karachi"> 8:00 AM - 9:00 AM</option>
+                        <option value="Karachi"> 9:00 AM - 10:00 AM</option>
+                        <option value="Karachi"> 10:00 AM - 11:00 AM</option>
+                        <option value="Karachi"> 11:00 AM - 12:00 PM</option>
 
 
-          </div>
+                    </select>
+                    <br><br>
+
+                    <span><input type="radio"><span>Drop-Off</span> </span>
+
+                </div>
+
+                <br>
+                <div class="subcontent">
+                    <h3 class="sub-heading">Location</h3>
+                    <select class="inputfield">
+                        <option value="location"> Select Your City</option>
+                        <option value="Karachi"> Karachi</option>
+                        <option value="Islamabad"> Islamabad</option>
+                        <option value="Faisalabad"> Faisalabad</option>
+                        <option value="Peshawar"> Peshawar</option>
+                        <option value="Lahore"> Lahore</option>
+                    </select>
+                </div>
+                <div class="subcontent">
+                    <h3 class="sub-heading">Location</h3>
+                    <select class="inputfield">
+                        <option value="location"> Select Your Date</option>
+                        <option value="Karachi"> 21-jan-2021</option>
+                        <option value="Karachi"> 22-jan-2021</option>
+                        <option value="Karachi"> 23-jan-2021</option>
+                        <option value="Karachi"> 24-jan-2021</option>
+                        <option value="Karachi"> 25-jan-2021</option>
+
+                    </select>
+                </div>
+                <div class="subcontent">
+                    <h3 class="sub-heading">Time</h3>
+                    <select class="inputfield">
+                        <option value="location"> Select Your Time</option>
+                        <option value="Karachi"> 7:00 AM - 8:00 AM</option>
+                        <option value="Karachi"> 8:00 AM - 9:00 AM</option>
+                        <option value="Karachi"> 9:00 AM - 10:00 AM</option>
+                        <option value="Karachi"> 10:00 AM - 11:00 AM</option>
+                        <option value="Karachi"> 11:00 AM - 12:00 PM</option>
+
+
+                    </select>
+
+
+                </div>
+            </div>
+
 
         </div>
+
+
+        <div class="child1-portion3">
+            <h2 style="font-size: 20px; margin-bottom: 5px;">Payment Method</h2>
+            <div class="portion1-section1">
+                <span>Please Enter your Payment Method</span>
+                <span>Step 3 Of 4</span>
+            </div>
+
+
+            <div class="card-section">
+
+                <div class="credit-option">
+                    <span class="credit-button"><input type="radio"><span class="credithead"> Credit
+                            Card</span></span>
+                    <span class="card-png"><img src="../images/Visa_Inc._logo.svg.webp" width="50px"><img
+                            src="" width="60px"></span>
+                </div>
+                <div class="portion3-section1">
+                    <div class="subcontent">
+                        <h3 class="sub-heading">Card Number</h3>
+                        <input type="number" class="inputfield1" placeholder="   Card Number">
+                    </div>
+                    <div class="subcontent">
+                        <h3 class="sub-heading">Expiration Date</h3>
+                        <input type="text" class="inputfield1" placeholder="   DD/MM/YYYY">
+                    </div>
+                    <div class="subcontent">
+                        <h3 class="sub-heading">Card Holder</h3>
+                        <input type="text" class="inputfield1" placeholder="   Card Holder">
+                    </div>
+                    <div class="subcontent">
+                        <h3 class="sub-heading">CVC</h3>
+                        <input type="text" class="inputfield1" placeholder="   CVC">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="paypal">
+                <div class="paypal-section1">
+                    <input type="radio">
+                    <Span class="paypal-text">PayPal</Span>
+                </div>
+                <div class="paypal-section2">
+                    <img src="../images/Paypal.png" width="80px">
+                </div>
+            </div>
+            <div class="paypal">
+                <div class="paypal-section1">
+                    <input type="radio">
+                    <Span class="paypal-text">Bitcoin</Span>
+                </div>
+                <div class="paypal-section2" style="margin-top: -6px;">
+                    <img src="../images/bitcoin.png" alt="" width="70px">
+                </div>
+            </div>
+
+
+        </div>
+        <div class="child1-portion3">
+            <h2 style="font-size: 20px; margin-bottom: 5px;">Confirmation</h2>
+            <div class="portion1-section1">
+                <span>We are getting to the end.Just few click and your rental is ready.</span>
+                <span>Step 4 Of 4</span>
+            </div>
+
+            <div class="Confirmation-section">
+                <div class="paypal-section1">
+                    <input type="checkbox">
+                    <span class="confirmation-text">I agree with sending an marketing and newsletter email.No
+                        Spam,Promissed.</span>
+                </div>
+            </div>
+            <div class="Confirmation-section">
+                <div class="paypal-section1">
+                    <input type="checkbox">
+                    <span class="confirmation-text">I agree with our terms and condition and privacy policy.</span>
+                </div>
+            </div>
+
+            <button class="Confirmation-button">Rent Now</button>
+            <br>
+            <img class="Confirmation-data" src="../images/Car6.png">
+            <h4>All your Data are Safe</h4>
+            <span class="data-quote">We are using the most advanced security to provide you the best experience
+                ever.</span>
+        </div>
+
+
+    </div>
+    <div class="child2-container">
+        <h2>Rental Summary</h2>
+        <p class="summary-para">Price may change depending on the length of the rental and price of your rental car.
+        </p>
+
+        <div class="portion1-child2-section1">
+            <div class="car-section">
+                <img class="img-child2" src="../images/Car5.png" alt="">
+            </div>
+
+            <div class="name-section-child2">
+                <h1>Nissan GT-R</h1>
+                <span>
+                    <i class="fa fa-star" style="color: orange"></i>
+                    <i class="fa fa-star" style="color: orange"></i>
+                    <i class="fa fa-star" style="color: orange"></i>
+                    <i class="fa fa-star" style="color: orange"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span>440+ Reviewer</span>
+                </span>
+            </div>
+
+        </div>
+
         <hr>
-        <div class="rent_total">
-          <div class="subtotal_div">
-            <h6>Subtotal</h6>
-          </div>
-          <div class="subtotal_div">
-            <h6>$80.00</h6>
-          </div>
+
+        <div class="subtotal">
+            <span class="subtotal-name">Sub-Total</span>
+            <span class="subtotal-value">$80.00</span>
         </div>
-        <div class="rent_total">
-          <div>
-            <h6>Tax</h6>
-          </div>
-          <div>
-            <h6>$0</h6>
-          </div>
-        </div>
-        <div class="PromoCode">
-          <span>Apply Promo Code</span>
-          <b> <span>Apply Now</span3></b>
-        </div>
-        <div class="final_rent">
-          <div class="Total_rent">
-            <h4>
-              Total Rent Price
-            </h4>
-            <p>Overall price and includes rental discount</p>
-          </div>
-          <div class="rent_price">
-            <h4>$80.00</h4>
-          </div>
+        <div class="subtotal">
+            <span class="subtotal-name">Tax</span>
+            <span class="subtotal-value">$0.00</span>
         </div>
 
-      </div>
-      <div class="billing_info">
-        <h4>Billing Info</h4>
-        <div class="billing_text">
-          <p>Please enter your billing info</p>
-          <p>step 1 of 4</p>
-        </div>
-        <div class="inputBiling">
-          <div>
-            <label for="">Name</label> <br>
-            <input type="text" name="" id="input" placeholder="Your Name">
-          </div>
-          <div>
-            <label for="">Phone Number</label><br>
-            <input type="number" name="" id="input" placeholder="Phone Number">
-          </div>
-        </div>
-        <div class="inputBiling">
-          <div>
-            <label for="">Adress</label> <br>
-            <input type="text" name="" id="input" placeholder="Adress">
-          </div>
-          <div>
-            <label for="">Town/City</label><br>
-            <input type="text" name="" id="input" placeholder="Town/City">
-          </div>
+        <div class="promo-code">
+            <input class="promocode-input" type="text" placeholder="Apply Promo Code">
+            <button class="promocode-btn">Apply Now </button>
         </div>
 
-
-      </div>
-      <div class="rental_info">
-
-
-      </div>
-    </div>
-
-    <div class="payment_method">
-      <div class="billing_info1">
-        <h4>Payment Method</h4>
-        <div class="billing_text1">
-          <p>Please enter your billing info</p>
-          <p>step 3 of 4</p>
-        </div>
-        <div class="payment_Sec">
-          <div class="payment_radio">
-            <div class="visaDiv">
-              <input type="radio" name="" id=""> <label for="">Credit Card</label>
+        <div class="last-item">
+            <div class="lastitem-part1">
+                <h2 class="lastitem-heading">Total Rental Price</h2>
+                <p class="lastitem-content">Overall Price and Include Rental Discount</p>
             </div>
-            <div>
-              <!-- <h1>VISA</h1> -->
-              <img src="/images/Visa_Inc._logo.svg.webp" height="20px" width="80px" alt="">
+            <div class="lastitem-part1">
+                <h2 class="lastitem-Price">$80.00</h2>
             </div>
-          </div>
-          <div class="inputBiling">
-            <div>
-              <label for="">Card Number</label> <br>
-              <input type="text" name="" id="inputForPayment" placeholder="Your Card Number">
-            </div>
-            <div>
-              <label for="">Expiration Date</label><br>
-              <input type="date" name="" id="inputForPayment"  placeholder="Phone Number">
-            </div>
-          </div>
-          <div class="inputBiling">
-            <div>
-              <label for="">Card Holder</label> <br>
-              <input type="text" name="" id="inputForPayment" maxlength="5px"
-               placeholder="Card Holder">
-            </div>
-            <div>
-              <label for="">CVC</label><br>
-              <input type="number" name="" id="inputForPayment" placeholder="CVC">
-            </div>
-          </div>
         </div>
 
 
-      </div>
-    </div>
-    <div class="payment_confirmation">
-      <h3>Confirmation</h3>
-      <div class="confir_text">
-        <div>
-          <p>We are getting to end. Just few clicks and your rental is ready!</p>
-        </div>
-        <div>
-          <span>Step 4 of 4</span>
-        </div>
 
-      </div>
-      <div class="check">
-        <input type="checkbox" class="checkBox"><label class="check_label" for=""> I agree with sending an Marketting
-          and newslatter emails. No spam,
-          Promissed!</label>
-      </div>
-      <div class="check">
-        <input type="checkbox"><label class="check_label" for=""> I agree with our terms and conditions and privacy
-          policy.</label>
-      </div>
-      <div class="btn">
-        <button>Rent Now</button>
-      </div>
 
-      <div class="last_text">
-        <h3> <span><i class="fa-regular fa-circle-check"></i></span></h3>
-        <h5>All your data are safe</h5>
-        <p>We are musing the most advanced security to provide you the best experince ever.</p>
-      </div>
 
     </div>
+</div>
 
+
+
+
+
+
+<footer class="foot">
+  <div class="foot_text">
+    <h1>
+      MORENT
+    </h1>
+    <P>
+      Our Vision is to provide convenience <br> and help increase your sales business.
+    </P>
   </div>
+  <div class="foot_list">
+    <ul>
+      <li>
+        <h3>About</h3>
+      </li>
+      <li>How it works</li>
+      <li>Featured</li>
+      <li>Patnership</li>
+      <li>Business Relation</li>
+    </ul>
+  </div>
+  <div class="foot_list">
+    <ul>
+      <li>
+        <h3>Community</h3>
+      </li>
+      <li>Events</li>
+      <li>Blogs</li>
+      <li>Podcast</li>
+      <li>Invite a friend</li>
+    </ul>
+  </div>
+  <div class="foot_list">
+    <ul>
+      <li>
+        <h3>Socials</h3>
+      </li>
+      <li>Discord</li>
+      <li>Instagram</li>
+      <li>Twitter</li>
+      <li>Facebook</li>
+    </ul>
+  </div>
+
+</footer>
+
+<div class="line">
+  <hr>
+</div>
+<div class="last_sec">
+  <div class="last_sec_data">
+    <h6>© 2022 MORENT. All rights reserved</h6>
+  </div>
+  <div class="last_sec_text">
+    <h6>Privacy & Policy</h6>
+    <h6>Terms and Condition</h6>
+  </div>
+</div>
+
+
 
 
 </body>
